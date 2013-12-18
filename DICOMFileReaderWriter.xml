@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <executable>
-  <category>Examples</category>
+  <category>Converters</category>
   <title>DICOM File Reader Writer</title>
   <description><![CDATA[]]></description>
   <version>0.1.0.$Revision$</version>
@@ -16,22 +16,15 @@
       <longflag>--inputFile</longflag>
       <description><![CDATA[The input DICOM file.]]></description>
       <label>Input DICOM File</label>
-      <default>./</default>
+      <default>/Path/to/file</default>
     </string>
     <string>
     <name>outputFile</name>
     <longflag>--outputFile</longflag>
     <description><![CDATA[The output DICOM file.]]></description>
     <label>Output DICOM File</label>
-    <default>./</default>
+    <default>/Path/to/file</default>
     </string>
-    <image>
-      <name>outputVolume</name>
-      <label>Output Volume</label>
-      <channel>output</channel>
-      <index>0</index>
-      <description><![CDATA[Input volume]]></description>
-    </image>
     <string-enumeration>
       <name>ioType</name>
       <description><![CDATA[Type of transform to produce]]></description>
@@ -48,6 +41,7 @@
       <longflag>imageDimension</longflag>
       <element>2</element>
       <element>3</element>
+      <element>4</element>
       <default>2</default>
     </string-enumeration>
   </parameters>
